@@ -27,14 +27,24 @@ html(lang="es")
 				
 			.gallery
 				.gal.doubleborder
-					#galleryjsm.jms-slideshow
-						.step(data-color="color-1", data-y="500", data-scale="0.4", data-rotate-x="30")
-							.jms-content
-								| img1
-						.step(data-color="color-2", data-y="500", data-scale="0.4", data-rotate-x="30")
-							.jms-content
-								| img2
 				
+					.galleria
+						img(src="_/img/gallery/im01.jpg", alt="")
+						img(src="_/img/gallery/im02.jpg", alt="")
+						img(src="_/img/gallery/im03.jpg", alt="")
+						img(src="_/img/gallery/im04.jpg", alt="")
+						img(src="_/img/gallery/im05.jpg", alt="")
+						img(src="_/img/gallery/im06.jpg", alt="")
+						img(src="_/img/gallery/im07.jpg", alt="")
+						img(src="_/img/gallery/im08.jpg", alt="")
+						img(src="_/img/gallery/im09.jpg", alt="")
+						img(src="_/img/gallery/im10.jpg", alt="")
+						img(src="_/img/gallery/im11.jpg", alt="")
+						img(src="_/img/gallery/im12.jpg", alt="")
+						img(src="_/img/gallery/im13.jpg", alt="")
+						img(src="_/img/gallery/im14.jpg", alt="")
+						
+						
 			.mainimg
 				img(src="_/img/main_galeria.jpg", alt="")
 		
@@ -47,4 +57,4 @@ html(lang="es")
 			+footer([['Nosotros', 'nosotros',''], ['Servicios', 'servicios',''], ['Galería', 'galeria', ''], ['Contacto', 'contacto', '']])
 		
 
-		+scripts(['_/jquery.js', '_/jquery.fractionslider.min.js', '_/jmpress.js', '_/jsm.js', '_script.js'])
+		+scripts(['_/jquery.js', '_/jquery.fractionslider.min.js', '_/galleria.min.js', '_script.js'])

@@ -10,7 +10,13 @@ $(function(){
     }
     
 	//Galeria
-	if($('#galleryjsm').length>0){
-		$('#galleryjsm').jmslideshow();
-	}
+										
+	Galleria.loadTheme('_/galleria/galleria.classic.min.js');
+	Galleria.run('.galleria');
+	Galleria.configure({
+		imageCrop: true,
+		transition: 'fadeslide',
+		easing: 'galleriaOut'
+	});
+	
 });
