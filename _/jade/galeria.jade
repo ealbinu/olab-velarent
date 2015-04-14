@@ -1,0 +1,50 @@
+include _mixins.jade
+
+doctype html
+html(lang="es")
+	head
+		+head("Velarent | Galería")
+	body
+	.all
+		header.mainHeader
+			+header([['Nosotros', 'nosotros',''], ['Servicios', 'servicios',''], ['Galería', 'galeria', 'active'], ['Contacto', 'contacto', '']])
+			
+		#mainbanner
+			.slider
+				.slide
+					img(src="_/img/s4_bg.jpg", alt="", data-position="0,0", data-in="fade")
+					img(src="_/img/s4_img.png", alt="", data-position="100,600", data-in="scrollRight")
+					.text.white.small(data-position="148,84", data-in="scrollBottom ") EL SOL Y LA LLUVIA
+					.text.yellow.medium(data-position="170,80", data-in="scrollBottom ") NO ESTÁN INVITADOS
+					.text.white.small(data-position="220,460", data-in="scrollBottom ") A MI FIESTA
+				.fs_loader
+		
+		section.main.doubleborder.mtover
+			.pleca ELEGANCIA
+			.textos
+				p.title GALERÍA DE PROYECTOS
+				p Hemos protegido del sol, de la lluvia, del viento por más de 45 años.
+				
+			.gallery
+				.gal.doubleborder
+					#galleryjsm.jms-slideshow
+						.step(data-color="color-1", data-y="500", data-scale="0.4", data-rotate-x="30")
+							.jms-content
+								| img1
+						.step(data-color="color-2", data-y="500", data-scale="0.4", data-rotate-x="30")
+							.jms-content
+								| img2
+				
+			.mainimg
+				img(src="_/img/main_galeria.jpg", alt="")
+		
+		
+				
+		section.bgtri.cover
+			+midNav('lessheight mtbgtriDown')
+		
+		footer
+			+footer([['Nosotros', 'nosotros',''], ['Servicios', 'servicios',''], ['Galería', 'galeria', ''], ['Contacto', 'contacto', '']])
+		
+
+		+scripts(['_/jquery.js', '_/jquery.fractionslider.min.js', '_/jmpress.js', '_/jsm.js', '_script.js'])

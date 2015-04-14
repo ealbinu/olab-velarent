@@ -1,0 +1,45 @@
+include _mixins.jade
+
+doctype html
+html(lang="es")
+	head
+		+head("Velarent | Nosotros")
+	body
+	.all
+		header.mainHeader
+			+header([['Nosotros', 'nosotros',''], ['Servicios', 'servicios','active'], ['Galería', 'galeria', ''], ['Contacto', 'contacto', '']])
+			
+		#mainbanner
+			.slider
+				.slide
+					img(src="_/img/s3_bg.jpg", alt="", data-position="0,0", data-in="fade")
+					img(src="_/img/s3_img.png", alt="", data-position="100,600", data-in="scrollRight")
+					.text.white.small(data-position="150,84", data-in="scrollBottom ") PARECE QUE VA A LLOVER,
+					.text.yellow.medium(data-position="170,80", data-in="scrollBottom ") QUE BUENO QUE
+					.text.white.small(data-position="220,316", data-in="scrollBottom ") TENGO CARPA
+				.fs_loader
+		
+		section.main.doubleborder.mtover
+			.pleca VELARENT
+			.textos
+				P VELARENT ROURA, está protegiendo durante todo su evento.Si el entorno que tiene no es de su agrado, VELARENT se lo decora a su gusto: con sus logos, rodeado de bosques, lagos o sus rostros.
+				p.title HEMOS PROTEGIDO DEL SOL, DE LA LLUVIA, DEL VIENTO POR MÁS DE 
+					span.red 45 AÑOS
+				p Somos expertos en Velarias para negocios, áreas de exposición y jardínes.En Roura, nos esforzamos por siempre brindar lo último en lonas y velarias; nuestros diseñadores estan capacitados con lo último en lonas y velarias a nivel mundial, para poder ofrecerle a usted las lonas velarias más exclusivas, prácticas y duraderas del mercado.
+				p Nuestra empresa diseñó hace más de 35 años las carpas que siguen usándose, caras o baratas, y convierte a su jardín en una habitación más, brincando los meseros sobre sus invitados si llueve, bajando las cortinas laterales y… si vuelve a hacer calor, pues ya no hay modo de subirlas nuevamente, a mano. 
+				p Los años de experiencia en el mercado y las alianzas establecidas en Latinoamérica , Estados Unidos, Alemania, Francia y Arabia Saudita nos respaldan.
+				p Nuestros diseños conviven armoniosamente en su entorno arquitectónico, buscando siempre ese equilibrio entre el buen gusto y la practicidad como lo son las Velarias para sus eventos. 
+			.mainimg
+				img(src="_/img/main_nosotros.jpg", alt="")
+		
+		
+				
+		section.bgtri.cover
+			+moreInfo('mtbgtriFirst')
+			+midNav('lessheight')
+		
+		footer
+			+footer([['Nosotros', 'nosotros',''], ['Servicios', 'servicios',''], ['Galería', 'galeria', ''], ['Contacto', 'contacto', '']])
+		
+
+		+scripts(['_/jquery.js', '_/jquery.fractionslider.min.js', '_script.js'])

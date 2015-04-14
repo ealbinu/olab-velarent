@@ -1,0 +1,38 @@
+include _mixins.jade
+
+doctype html
+html(lang="es")
+	head
+		+head("Velarent | Toldos")
+	body
+	.all
+		header.mainHeader
+			+header([['Nosotros', 'nosotros',''], ['Servicios', 'servicios',''], ['Galería', 'galeria', ''], ['Contacto', 'contacto', '']])
+			
+		#mainbanner
+			.slider
+				.slide
+					img(src="_/img/s8_bg.jpg", alt="", data-position="0,0", data-in="fade")
+				.fs_loader
+		
+		section.main.doubleborder.mtover
+			.pleca TOLDOS
+			.textos
+				p.title CONÓCE NUESTROS TOLDOS
+				p En Castilla además de las Velarias somos expertos en todo tipo de cubiertas como carpas de lona, toldos corredizos, toldos fijos de lona, toldos para terrazas, toldos retráctiles, toldos a la medida, en resúmen, todo lo relacionado con toldos y lonas para brindar a nuestros clientes la opción más conveniente a sus necesidades.
+				p Somos una empresa experta en Toldos para el sol; nuestros toldos están hechos de lonas carpas de la más alta calidad. Contamos con toldos para fiestas, toldos y carpas, toldos para necesidades específicas de diversos rubros, eventos social, empresas, etc.
+				p Contamos con la más reciente tecnología para hacer de sus Velarias Lonas una fuente de energía, distinción y practicidad para su hogar o negocio. Todos nuestros trabajos están hechos de manera personalizada para cada liente, por ese motivo cada proyecto es único y original.
+				
+			.mainimg
+				img(src="_/img/main_toldos.jpg", alt="")
+		
+		
+				
+		section.bgtri.cover
+			+midNav('lessheight mtbgtriDown')
+		
+		footer
+			+footer([['Nosotros', 'nosotros',''], ['Servicios', 'servicios',''], ['Galería', 'galeria', ''], ['Contacto', 'contacto', '']])
+		
+
+		+scripts(['_/jquery.js', '_/jquery.fractionslider.min.js', '_/jmpress.js', '_/jsm.js', '_script.js'])

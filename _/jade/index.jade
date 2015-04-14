@@ -1,0 +1,56 @@
+include _mixins.jade
+
+doctype html
+html(lang="es")
+	head
+		+head("Velarent")
+	body
+	.all
+		header.mainHeader
+			+header([['Nosotros', 'nosotros',''], ['Servicios', 'servicios',''], ['Galería', 'galeria', ''], ['Contacto', 'contacto', '']])
+			
+		#mainbanner
+			.slider
+				.slide
+					img(src="_/img/s1_bg.jpg", alt="", data-position="0,0", data-in="fade")
+					img(src="_/img/s1_img.png", alt="", data-position="100,450", data-in="scrollRight")
+					.text.white.medium(data-position="200,80", data-in="scrollBottom ") SIEMPRE
+					.text.white.big(data-position="240,80", data-in="scrollBottom ") PROTECCIÓN
+					.text.white.small(data-position="305,286", data-in="scrollBottom ") PARA SU EVENTO
+				.slide
+					img(src="_/img/s2_bg.jpg", alt="", data-position="0,0", data-in="fade")
+					img(src="_/img/s2_img.png", alt="", data-position="100,600", data-in="scrollRight")
+					.text.white.small(data-position="200,84", data-in="scrollBottom ") HASTA
+					.text.yellow.medium(data-position="220,80", data-in="scrollBottom ") LUZCO MÁS GUAPO
+					.text.white.small(data-position="270,282", data-in="scrollBottom ") SIN QUE ME DÉ EL SOL
+				.slide
+					img(src="_/img/s3_bg.jpg", alt="", data-position="0,0", data-in="fade")
+					img(src="_/img/s3_img.png", alt="", data-position="100,600", data-in="scrollRight")
+					.text.white.small(data-position="150,84", data-in="scrollBottom ") PARECE QUE VA A LLOVER,
+					.text.yellow.medium(data-position="170,80", data-in="scrollBottom ") QUE BUENO QUE
+					.text.white.small(data-position="220,316", data-in="scrollBottom ") TENGO CARPA
+				.slide
+					img(src="_/img/s4_bg.jpg", alt="", data-position="0,0", data-in="fade")
+					img(src="_/img/s4_img.png", alt="", data-position="100,600", data-in="scrollRight")
+					.text.white.small(data-position="148,84", data-in="scrollBottom ") EL SOL Y LA LLUVIA
+					.text.yellow.medium(data-position="170,80", data-in="scrollBottom ") NO ESTÁN INVITADOS
+					.text.white.small(data-position="220,460", data-in="scrollBottom ") A MI FIESTA
+				.fs_loader
+		
+		section.main.doubleborder.mtover
+			.pleca EXPERTOS
+			.textos
+				p Nuestra empresa diseñó hace más de 35 años las carpas, en Roura nos dedicamos ala confección y venta y renta de velarías, expertos en proyectos de todos los tamaños, proporcionamos un toque de elegancia y buen gusto a espacios tan pequeños como el jardín de una casa hasta áreas de exposición o grandes escenarios al aire libre. 
+		
+		
+				
+		section.bgtri
+			+midNav('mtbgtri')
+			+moreInfo('mtbgtri')
+		
+		
+		footer
+			+footer([['Nosotros', 'nosotros',''], ['Servicios', 'servicios',''], ['Galería', 'galeria', ''], ['Contacto', 'contacto', '']])
+		
+
+		+scripts(['_/jquery.js', '_/jquery.fractionslider.min.js', '_script.js'])

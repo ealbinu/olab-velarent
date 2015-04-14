@@ -1,0 +1,40 @@
+include _mixins.jade
+
+doctype html
+html(lang="es")
+	head
+		+head("Velarent | Carpas")
+	body
+	.all
+		header.mainHeader
+			+header([['Nosotros', 'nosotros',''], ['Servicios', 'servicios',''], ['Galería', 'galeria', ''], ['Contacto', 'contacto', '']])
+			
+		#mainbanner
+			.slider
+				.slide
+					img(src="_/img/s7_bg.jpg", alt="", data-position="0,0", data-in="fade")
+					img(src="_/img/s7_img.png", alt="", data-position="100,600", data-in="scrollRight")
+					.text.white.small(data-position="148,84", data-in="scrollBottom ") NO ME PREOCUPO
+					.text.yellow.medium(data-position="170,80", data-in="scrollBottom ") SI EMPEZA A LLOVER
+					.text.white.small(data-position="220,320", data-in="scrollBottom ") CUENTO CON CARPA
+				.fs_loader
+		
+		section.main.doubleborder.mtover
+			.pleca CARPAS
+			.textos
+				p.title NUESTRAS CARPAS SON LA SOLUCIÓN
+				p Nos especializamos en dar soluciones en Arquitectura textil creando espacios exteriores armónicos como: toldos para jardín, carpas desmontables, toldos para terraza, cortinas de caída, toldos para negocio, velarias, toldos luminosos, tenso-estructuras, toldos corredizos, cubiertas con lona, toldos retráctiles, paraboloides, shutters y ventanas de seguridad.
+				
+			.mainimg
+				img(src="_/img/main_carpas.jpg", alt="")
+		
+		
+				
+		section.bgtri.cover
+			+midNav('lessheight mtbgtriDown')
+		
+		footer
+			+footer([['Nosotros', 'nosotros',''], ['Servicios', 'servicios',''], ['Galería', 'galeria', ''], ['Contacto', 'contacto', '']])
+		
+
+		+scripts(['_/jquery.js', '_/jquery.fractionslider.min.js', '_/jmpress.js', '_/jsm.js', '_script.js'])

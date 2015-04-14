@@ -1,0 +1,44 @@
+include _mixins.jade
+
+doctype html
+html(lang="es")
+	head
+		+head("Velarent | Velarias")
+	body
+	.all
+		header.mainHeader
+			+header([['Nosotros', 'nosotros',''], ['Servicios', 'servicios',''], ['Galería', 'galeria', ''], ['Contacto', 'contacto', '']])
+			
+		#mainbanner
+			.slider
+				.slide
+					img(src="_/img/s6_bg.jpg", alt="", data-position="0,0", data-in="fade")
+					img(src="_/img/s6_img.png", alt="", data-position="100,600", data-in="scrollRight")
+					.text.white.small(data-position="148,84", data-in="scrollBottom ") NO CULPES AL VIENTO
+					.text.yellow.medium(data-position="170,80", data-in="scrollBottom ") NO CULPES A LA LLUVIA
+					.text.white.small(data-position="220,374", data-in="scrollBottom ") MEJOR RENTA VELARIA
+				.fs_loader
+		
+		section.main.doubleborder.mtover
+			.pleca VELARIAS
+			.textos
+				p.title TENSO ESTRUCTURAS IMPONENTES
+				p El impacto visual que generan las tenso-estructuras, mejor concidas como Velarias, es la forma ideal de atraer la atención de gente sofisticada.
+				p Las velarias combinan protección y funcionalidad con elegancia constructiva.
+				p Somos expertos en Velarias para negocios, áreas de exposición y jardines.
+				p Nos esforzamos por siempre brindar lo último en lonas y velarias; nuestros diseñadores estan capacitados con lo último en lonas y velarias a nivel mundial, para poder ofrecerle a usted las lonas velarias más exclusivas, prácticas y duraderas del mercado.
+				p Permita que nuestro equipo de profesionales del diseño convierta ese espacio especial con el uso de una de nuestras velarias, en un espacio simplemente inolvidable.
+				
+			.mainimg
+				img(src="_/img/main_velarias.jpg", alt="")
+		
+		
+				
+		section.bgtri.cover
+			+midNav('lessheight mtbgtriDown')
+		
+		footer
+			+footer([['Nosotros', 'nosotros',''], ['Servicios', 'servicios',''], ['Galería', 'galeria', ''], ['Contacto', 'contacto', '']])
+		
+
+		+scripts(['_/jquery.js', '_/jquery.fractionslider.min.js', '_/jmpress.js', '_/jsm.js', '_script.js'])

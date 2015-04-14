@@ -1,0 +1,64 @@
+mixin head(titleText)
+	meta(charset="utf-8")
+	title=titleText
+	meta(name="description" content="")
+	meta(name="viewport" content="width=device-width, initial-scale=1")
+	//link(href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", rel='stylesheet')
+	//link(href='http://fonts.googleapis.com/css?family=Muli:300,400', rel='stylesheet', type='text/css')
+	link(rel="stylesheet", href="_/css/_style.css")
+
+
+mixin header(navigation)
+	#header
+		.logotype
+			a(href="http://velarent.com"): img(src="_/img/velarent.png", alt="Velarent")
+		nav.mainNav
+			ul
+				- each nav in navigation
+					li: a(href="#{nav[1]}.html", class=nav[2])=nav[0]
+
+
+mixin scripts(scr)
+	- each sc in scr
+		script(src="_/js/#{sc}")
+
+
+mixin footer(navigation)
+	#footer
+		.imago
+			a(href="index.html"): img(src="_/img/imago.png", alt="")
+		nav.secNav
+			ul
+				- each nav in navigation
+					li: a(href="#{nav[1]}.html", class=nav[2])=nav[0]
+		.socials
+			a(href="#").fa.fa-facebook
+			a(href="#").fa.fa-twitter
+			span.gold  | 
+			span.phone  5794-6766
+
+
+mixin midNav(extraclass)
+	section.midNav(class=extraclass)
+		article.imgbtn#velariasBtn.shadow
+			a(href="velarias.html").btngolden Velarias
+		article.imgbtn#carpasBtn.shadow
+			a(href="carpas.html").btngolden Carpas
+		article.imgbtn#toldosBtn.shadow
+			a(href="toldos.html").btngolden Toldos	
+
+mixin moreInfo(extraclass)
+	section.moreinfo(class=extraclass)
+		hr
+		article.us
+			.title SIEMPRE PROTECCIÓN PARA SU EVENTO
+			p Nuestra empresa diseñó hace más de <strong class="gold">35 años</strong> las carpas, en Roura nos dedicamos ala confección y venta y renta de velarías, expertos en proyectos de todos los tamaños, proporcionamos un toque de elegancia y buen gusto a espacios tan pequeños como el jardín de una casa hasta áreas de exposición o grandes escenarios al aire libre. Disfrute el entorno en su evento al aire libre si llueve…..no importa, si hace frío…..no importa.
+
+			p <span class="gold">VELARENT ROURA</span>, está protegiendo durante todo su evento.Si el entorno que tiene no es de su agrado, VELARENT se lo decora a su gusto: con sus logos, rodeado de bosques, lagos o sus rostros.
+		article.call.shadow
+			.doubleborder
+				.image
+					img(src="_/img/callimg.png", alt="")
+				.text
+					.title SEGURO
+					p Contáctenos y tendrá la protección que desea para su evento. Ya no sorpresas desagradables, ya no encierros, ya no terminar su evento antes de tiempo por la incomodidad de sus invitados.

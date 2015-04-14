@@ -1,0 +1,61 @@
+include _mixins.jade
+
+doctype html
+html(lang="es")
+	head
+		+head("Velarent | Contacto")
+	body
+	.all
+		header.mainHeader
+			+header([['Nosotros', 'nosotros',''], ['Servicios', 'servicios','active'], ['Galería', 'galeria', ''], ['Contacto', 'contacto', '']])
+			
+		#mainbanner
+			.slider
+				.slide
+					img(src="_/img/s5_bg.jpg", alt="", data-position="0,0", data-in="fade")
+					img(src="_/img/s5_img.png", alt="", data-position="100,600", data-in="scrollRight")
+					.text.white.small(data-position="150,84", data-in="scrollBottom ") QUE NO
+					.text.yellow.medium(data-position="170,80", data-in="scrollBottom ") SE TE ACABE LA FIESTA
+					.text.white.small(data-position="220,446", data-in="scrollBottom ") CONTÁCTANOS
+				.fs_loader
+		
+		section.main.doubleborder.mtover
+			.pleca SÓLO LO MEJOR
+			.textos
+				p.title NO HAGA DE SU EVENTO UN CIRCO
+				p Nos especializamos en dar soluciones en Arquitectura Textil creando espacios exteriores armónicos como; toldos para jardín, carpas desmontables, toldos para terraza, cortinas de caída, toldos para negocio, velarías, toldos luminosos, tenso-estructuras, toldos corredizos, cubiertas con lona, toldos retráctiles, paraboloides, shutters y ventanas de seguridad.
+			.contacto
+				address
+					p.gold Calle
+					p Lorem ipsum dolor sit amet
+					p.gold Delegación
+					p Lorem ipsum dolor sit amet
+					p.gold Ciudad
+					p Lorem ipsum dolor sit amet
+					p.gold Teléfono
+					p (55)-5555-5555
+				form(action="#")
+					.grupo
+						label(for="fn") Nombre
+						input(type="text", placeholder="Nombre")#fn
+					.grupo
+						label(for="ft") Teléfono
+						input(type="text", placeholder="Número telefónico")#ft
+					.grupo
+						label(for="fc") Correo electrónico
+						input(type="text", placeholder="Email")#fc
+					.grupo
+						button(type="button") Contactar
+			.mainimg
+				img(src="_/img/main_contacto.jpg", alt="")
+		
+		
+				
+		section.bgtri.cover
+			+midNav('lessheight mtbgtriDown')
+		
+		footer
+			+footer([['Nosotros', 'nosotros',''], ['Servicios', 'servicios',''], ['Galería', 'galeria', ''], ['Contacto', 'contacto', '']])
+		
+
+		+scripts(['_/jquery.js', '_/jquery.fractionslider.min.js', '_script.js'])
